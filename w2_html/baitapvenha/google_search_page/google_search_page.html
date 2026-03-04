@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Khai báo đây là tài liệu HTML5 -->
+<html lang="en"> <!-- Thẻ gốc của trang web, lang="en" nghĩa là nội dung chính bằng tiếng Anh -->
+<head>
+    <!-- Phần head chứa thông tin cấu hình cho trang (không hiển thị ra màn hình) -->
+    <meta charset="UTF-8"> <!-- Bộ mã UTF-8 để hiển thị đúng tiếng Việt và các ngôn ngữ khác -->
+    <meta name="description" content="Simple Google search page clone for learning HTML"> <!-- Mô tả trang web (dùng cho SEO, công cụ tìm kiếm) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Giúp trang hiển thị đúng trên thiết bị di động -->
+    <title>Google</title> <!-- Tiêu đề hiển thị trên tab trình duyệt -->
+</head>
+
+<body>
+<!-- Phần body chứa nội dung hiển thị ra màn hình -->
+
+    <center>
+        <!-- Căn giữa toàn bộ nội dung bên trong-->
+
+        <h1>Google</h1> <!-- Tiêu đề chính của trang -->
+
+        <form action="https://www.google.com/search" method="GET">
+            <!-- 
+                Form gửi dữ liệu đến Google thật
+                method="GET" nghĩa là dữ liệu sẽ hiển thị trên URL
+                action là địa chỉ nhận dữ liệu
+            -->
+
+            <input type="text" name="q" size="40" placeholder="Search Google">
+            <!-- 
+                Ô nhập từ khóa
+                name="q" rất quan trọng vì Google dùng tham số q để tìm kiếm
+            -->
+            <br><br>
+
+            <input type="submit" value="Google Search">
+        </form>
+
+        <br>
+
+        <p>
+            Google offered in:
+            <a href="#">Tiếng Việt</a>
+            <a href="#">Français</a>
+            <a href="#">繁體中文</a>
+       
+        </p>
+
+    </center>
+
+    <hr>
+    <!-- Đường kẻ ngang để phân cách nội dung và footer -->
+
+    <footer>
+        <center>
+         
+            <p>Vietnam</p>
+            <p>
+                <a href="#">About</a> |
+                <a href="#">Advertising</a> |
+                <a href="#">Business</a> |
+                <a href="#">How Search Works</a>
+            </p>
+          
+            <p>
+                <a href="#">Privacy</a> |
+                <a href="#">Terms</a> |
+                <a href="#">Settings</a>
+            </p>
+            <p>© 2026 Google Clone - For Learning Purposes</p>
+            
+        </center>
+    </footer>
+
+</body>
+</html>

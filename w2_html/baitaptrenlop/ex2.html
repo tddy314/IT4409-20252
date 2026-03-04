@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Exercise 2</title>
+    </header>
+    <body>
+        <p>Hello from Nguyen Tung Duong 20230023, please fill in the form for registration</p>
+        <form>
+            <label for="username">Username(required)</label><br>
+            <input type="text" id="username" name="username" required
+            oninvalid="this.setCustomValidity('Please insert your name')"
+            oninput="this.setCustomValidity('')">
+            <br><br>
+
+            <label for="email">Email(required)</label><br>
+            <input type="text" id="email" name="email" required
+            oninvalid="this.setCustomValidity('Please insert your email')"
+            oninput="this.setCustomValidity('')">
+            <br><br>
+
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="nm"> Secret
+            <br><br>
+
+            <label for="birthyear">Birthyear</label><br>
+            <input type="number" id="birthyear" name="birthyear" min="1926" max="2026"
+            oninvalid="this.setCustomValidity('Your birthyear must be in range 1926 and 2026')"
+            oninput="this.setCustomValidity('')">
+            <br><br>
+
+            <button type="submit" onclick="alert('Success')">Submit</button>
+        </form>
+    </body>
+</html>
